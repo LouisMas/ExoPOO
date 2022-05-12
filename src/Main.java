@@ -14,7 +14,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Entrez votre nom");
+        System.out.println("Entrez votre nom ");
         name = scanner.next();
 
         System.out.println("Entrez la premiere note");
