@@ -1,4 +1,5 @@
 import Exo2.fr.Somme;
+import Exo3.fr.Etudiant;
 
 import java.util.Scanner;
 
@@ -6,22 +7,26 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double nb1;
-        double nb2;
+        int nb1;
+        int nb2;
+        String name;
 
         Scanner scanner = new Scanner(System.in);
-        Somme somme = new Somme(1,1);
 
-        System.out.println("Entrez le premier chiffre");
-        nb1 = scanner.nextDouble();
 
-        System.out.println("Entrez le second chiffre");
-        nb2 = scanner.nextDouble();
+        System.out.println("Entrez votre nom");
+        name = scanner.next();
+
+        System.out.println("Entrez la premiere note");
+        nb1 = scanner.nextInt();
+
+        System.out.println("Entrez la seconde note");
+        nb2 = scanner.nextInt();
         System.out.println();
 
-        Somme.setN1(nb1);
-        Somme.setN2(nb2);
-        Somme.sum();
+        Etudiant etudiant = new Etudiant(name,nb1,nb2);
+
+        etudiant.afficher();
 
     }
 }
