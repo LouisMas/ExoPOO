@@ -29,6 +29,8 @@ public class Point {
         double calcP1 = (p2.getX() - p1.getX());
         double calcP2 = (p2.getY() - p1.getY());
         calcP1 *= calcP1;
+
+
         calcP2 *= calcP2;
 
         return Math.sqrt(calcP1 + calcP2);
