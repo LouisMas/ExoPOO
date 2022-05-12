@@ -46,6 +46,6 @@ public class Etudiant {
     public void afficher() {
 
         calculerMoyenne();
-        System.out.printf("Nom : " + nom + " Note moyenne : " + moyenne);
+        System.out.printf("Nom : " + nom + "%nNote moyenne : " + moyenne);
     }
 }
