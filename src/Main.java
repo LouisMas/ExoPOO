@@ -1,6 +1,7 @@
 import Exo2.fr.Somme;
 import Exo3.fr.Etudiant;
 import Exo4.fr.AdditionComplexe;
+import exo5.fr.Point;
 
 import java.util.Scanner;
 
@@ -8,30 +9,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int nb1Reel,nb2Reel;
-        int nb1Imaginaire,nb2Imaginaire;
-
         Scanner scanner = new Scanner(System.in);
+        Point point1 = new Point(5,6);
+        Point point2 = new Point(3,2);
 
 
-        System.out.println("Entrez la partie reel");
-        nb1Reel = scanner.nextInt();
 
-        System.out.println("Entrez la partie imaginaire");
-        nb1Imaginaire = scanner.nextInt();
-        System.out.println();
-
-        System.out.println("Entrez la partie reel");
-        nb2Reel = scanner.nextInt();
-
-        System.out.println("Entrez la partie imaginaire");
-        nb2Imaginaire = scanner.nextInt();
-        System.out.println();
+        System.out.printf("La distance entre P1 et P2 est :%.5f\n ", point1.distance(point1,point2));
 
 
-        AdditionComplexe additionComplexe = new AdditionComplexe(nb1Reel,nb2Reel,nb1Imaginaire,nb2Imaginaire);
-        System.out.print("La somme est ");
-        additionComplexe.calcul();
+
+
+
 
     }
 }
