@@ -12,7 +12,7 @@ public class Student extends Person {
 
     public void DisplayAge () {
 
-        System.out.println("My age is : " + getAge() + "years old");
+        System.out.println("My age is : " + getAge() + " years old");
     }
 
 }

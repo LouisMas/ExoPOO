@@ -8,11 +8,13 @@ public class Test {
         person.sayHello();
 
         Student student = new Student(15);
+        student.sayHello();
         student.DisplayAge();
         student.GoToClasses();
 
         Teacher teacher = new Teacher(40);
         teacher.sayHello();
+        teacher.DisplayAge();
         teacher.Explain();
 
 

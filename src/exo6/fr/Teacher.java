@@ -10,5 +10,9 @@ public class Teacher extends Person{
 
         System.out.println("Explanation begin");
     }
+    public void DisplayAge () {
+
+        System.out.println("My age is : " + getAge() + " years old");
+    }
 }
 
