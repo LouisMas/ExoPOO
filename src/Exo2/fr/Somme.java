@@ -29,7 +29,7 @@ public class Somme {
     public static  void sum () {
 
         double sum = n1 + n2;
-        System.out.println("Somme = " + sum);
+        System.out.println("Somme =  " + sum);
     }
 
 }
